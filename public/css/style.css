@@ -1,0 +1,125 @@
+html{
+    background-image: url("https://backgrounder.dynamyc.me/gimme");
+	min-height: 100%;
+	background-position-x: center;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* backdrop-filter: blur(8px); */
+}
+
+@media screen and (orientation: portrait) {
+	body {
+		background-position-y: top;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+	}
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */ 
+@media (min-width:320px)  { 
+	.main-window{
+		margin: 2.5% 9% 0% 9%;
+		max-width: 100%; 
+	}
+	.circle{
+		border-radius: 50%;
+		margin-right: 15%;
+		min-height: 25%;
+		max-width: 100%;
+		max-height: auto;
+	}
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media (min-width:481px)  { 
+	.main-window{
+		margin: 2.5% 9% 0% 9%;
+		max-width: 100%; 
+	}
+	.circle{
+		border-radius: 50%;
+		margin-right: 0%;
+		min-height: 25%;
+		max-width: 95%;
+		max-height: auto;
+	}
+}
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (min-width:641px)  { 
+	.main-window{
+		margin: 2.5% 12% 0% 12%;
+		max-width: 100%; 
+	}
+	.circle{
+		border-radius: 50%;
+		margin-right: 0%;
+		min-height: 25%;
+		max-width: 85%;
+		max-height: auto;
+	}
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+@media (min-width:961px)  { 
+	.main-window{
+		margin: 2.5% 13% 0% 13%;
+		max-width: 100%; 
+	}
+	.circle{
+		border-radius: 50%;
+		margin-right: 10%;
+		min-height: 25%;
+		max-width: 75%;
+		max-height: auto;
+	}
+}
+/* big landscape tablets, laptops, and desktops */ 
+@media (min-width:1025px) { 
+	.main-window{
+		margin: 2.5% 14% 0% 14%;
+		max-width: 100%; 
+	}
+	.circle{
+		border-radius: 50%;
+		margin-right: 10%;
+		min-height: 25%;
+		max-width: 65%;
+		max-height: auto;
+	}
+}
+/* hi-res laptops and desktops */ 
+@media (min-width:1281px) { 
+	.main-window{
+		margin: 2.5% 16% 0% 16%;
+		max-width: 100%; 
+	}
+	.circle{
+		border-radius: 50%;
+		margin-right: 10%;
+		min-height: 25%;
+		max-width: 55%;
+		max-height: auto;
+	}
+}
+
+/* .circle{
+	border-radius: 50%;
+	margin-right: 15%;
+	min-height: 25%;
+	max-width: 35%;
+	max-height: auto;
+} */
+
+ul#accounts{
+	/* display: inline-flexbox; */
+}
+
+body{
+	--window-background-color: #4b2077;
+}
+
