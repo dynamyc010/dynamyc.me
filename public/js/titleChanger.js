@@ -9,7 +9,7 @@ const titleJSON = `{
         "meep",
         "Boo!",
         "Did you know that this is random every time?",
-        "If you see this, it works!",
+        "If you see this, your internet works!",
         "Who dares enter my dungeon?",
         "hewwo owo",
         "brb, yeeting myself out of existence",

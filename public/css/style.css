@@ -9,7 +9,10 @@ html{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	/* backdrop-filter: blur(8px); */
+}
+
+body{
+	--window-background-color: #4b2077;
 }
 
 @media screen and (orientation: portrait) {
@@ -106,20 +109,3 @@ html{
 		max-height: auto;
 	}
 }
-
-/* .circle{
-	border-radius: 50%;
-	margin-right: 15%;
-	min-height: 25%;
-	max-width: 35%;
-	max-height: auto;
-} */
-
-ul#accounts{
-	/* display: inline-flexbox; */
-}
-
-body{
-	--window-background-color: #4b2077;
-}
-
