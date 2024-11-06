@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Lucida BSOD;
+  src:
+    local("Lucida BSOD"),
+    url("../fonts/lucida-bsod/lucida-bsod.ttf") format("truetype"),
+    url("../fonts/lucida-bsod/lucida-bsod.otf") format("opentype");
+}
+
+body {
+  font-family: "Lucida BSOD";
+  color: #FFFFFF;
+  background: #000082;
+  margin: 0;
+}
+
+main {
+  margin-top: 1%;
+}
+
