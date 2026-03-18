@@ -13,6 +13,7 @@ html{
 
 body{
 	--window-background-color: #4b2077;
+	overflow: hidden;
 }
 
 @media screen and (orientation: portrait) {
@@ -25,11 +26,36 @@ body{
 	}
 }
 
-/* smartphones, iPhone, portrait 480x320 phones */ 
-@media (min-width:320px)  { 
+/* Base styles for draggable window */
+.main-window {
+	position: absolute;
+	user-select: none;
+	height: auto;
+}
+
+.main-window .window-body article {
+	min-height: 450px;
+	overflow: auto;
+	max-height: calc(100vh - 100px);
+}
+
+/* Exit dialog positioning */
+#exit-dialog {
+	position: fixed;
+	display: none;
+	z-index: 9999;
+	user-select: none;
+}
+
+#exit-dialog:target {
+	display: block;
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
 	.main-window{
-		margin: 2.5% 9% 0% 9%;
-		max-width: 100%; 
+		width: 82%;
+		max-width: 100%;
 	}
 	.circle{
 		border-radius: 50%;
@@ -39,11 +65,11 @@ body{
 		max-height: auto;
 	}
 }
-/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-@media (min-width:481px)  { 
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
 	.main-window{
-		margin: 2.5% 9% 0% 9%;
-		max-width: 100%; 
+		width: 82%;
+		max-width: 100%;
 	}
 	.circle{
 		border-radius: 50%;
@@ -53,11 +79,11 @@ body{
 		max-height: auto;
 	}
 }
-/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-@media (min-width:641px)  { 
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
 	.main-window{
-		margin: 2.5% 12% 0% 12%;
-		max-width: 100%; 
+		width: 76%;
+		max-width: 100%;
 	}
 	.circle{
 		border-radius: 50%;
@@ -67,11 +93,11 @@ body{
 		max-height: auto;
 	}
 }
-/* tablet, landscape iPad, lo-res laptops ands desktops */ 
-@media (min-width:961px)  { 
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
 	.main-window{
-		margin: 2.5% 13% 0% 13%;
-		max-width: 100%; 
+		width: 74%;
+		max-width: 100%;
 	}
 	.circle{
 		border-radius: 50%;
@@ -81,11 +107,11 @@ body{
 		max-height: auto;
 	}
 }
-/* big landscape tablets, laptops, and desktops */ 
-@media (min-width:1025px) { 
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
 	.main-window{
-		margin: 2.5% 14% 0% 14%;
-		max-width: 100%; 
+		width: 72%;
+		max-width: 100%;
 	}
 	.circle{
 		border-radius: 50%;
@@ -95,11 +121,11 @@ body{
 		max-height: auto;
 	}
 }
-/* hi-res laptops and desktops */ 
-@media (min-width:1281px) { 
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
 	.main-window{
-		margin: 2.5% 16% 0% 16%;
-		max-width: 100%; 
+		width: 68%;
+		max-width: 100%;
 	}
 	.circle{
 		border-radius: 50%;
