@@ -43,6 +43,7 @@ body{
 /* Make the accounts section selectable, for easy copying */
 #accounts {
 	user-select: text !important;
+	cursor: default !important;
 }
 
 /* Exit dialog positioning */
