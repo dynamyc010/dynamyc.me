@@ -39,6 +39,12 @@ body{
 	max-height: calc(100vh - 100px);
 }
 
+
+/* Make the accounts section selectable, for easy copying */
+#accounts {
+	user-select: text !important;
+}
+
 /* Exit dialog positioning */
 #exit-dialog {
 	position: fixed;
